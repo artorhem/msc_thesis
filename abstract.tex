@@ -1,0 +1,28 @@
+%% The following is a directive for TeXShop to indicate the main file
+%%!TEX root = diss.tex
+
+\chapter{Abstract}
+
+Users desire control over their data even as they share them across device
+  boundaries. At the moment, they rely on ad-hoc solutions such as sending
+  self-destructible data with ephemeral messaging apps such as SnapChat. We 
+  present \textbf{Trusted Capsules}, a general cross-device access
+  control abstraction for files. It bundles sensitive files with the policies
+  that govern their accesses into units we call {\em capsules}. Capsules appear
+  as regular files in the system. When an app opens one, its policy is executed
+  in ARM TrustZone, a hardware-based trusted execution environment, to determine
+  if access should be allowed or denied. As Trusted Capsules is based on a
+  pragmatic threat model, it works with unmodified apps that users have come to
+  rely on, unlike existing work. We show that policies in Trusted Capsules are
+  expressible and that the slowdowns in our approach are limited to the opening
+  and closing of capsules. Once an app opens a capsule, its read throughput of
+  the file is identical to regular non-capsule files.
+
+
+% Consider placing version information if you circulate multiple drafts
+%\vfill
+%\begin{center}
+%\begin{sf}
+%\fbox{Revision: \today}
+%\end{sf}
+%\end{center}
